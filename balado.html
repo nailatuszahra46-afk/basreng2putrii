@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Basreng Balado</title>
+  <link rel="stylesheet" href="CSS/balado.css">
+</head>
+<body>
+<div class="cart-icon" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+<div class="cart-box" id="cart-box">
+  <h3>Keranjang</h3>
+  <div id="cart-items"></div>
+  <button onclick="checkoutWA()">Checkout WA</button>
+</div>
+<div class="container">
+  <img src="IMAGE/basrengbalado.jpg" alt="Basreng Balado">
+
+  <h1>Basreng Balado</h1>
+  <p class="desc">Basreng dengan bumbu balado khas yang manis, pedas, dan sedikit asam. Memberikan sensasi rasa yang kaya dan khas Indonesia.</p>
+
+  <label for="ukuran">Pilih Ukuran</label>
+  <select id="ukuran" onchange="updateHarga()">
+    <option value="">-- Pilih --</option>
+    <option value="20000">250 g - Rp 20.000</option>
+    <option value="35000">500 g - Rp 35.000</option>
+    <option value="70000">1 kg - Rp 70.000</option>
+  </select>
+
+  <p class="harga">Harga: <span id="harga">Rp 0</span></p>
+
+  <button onclick="tambahKeranjang()">Tambah ke Keranjang</button>
+
+  <a href="varian.html" class="back">Kembali</a>
+</div>
+
+<script src="JAVA SCRIPT/index.js"></script>
+<script src="JAVA SCRIPT/balado.js"></script>
+
+
+</body>
+</html>
